@@ -7,6 +7,7 @@
 h1 {
     text-align: center;
     font-family: "Open-Sans";
+    font-weight: bold;
 }
 
 ul {
@@ -15,8 +16,18 @@ ul {
 
 ul li {
     list-style: none;
+    display: block;
 }
 
 ul li a {
     text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: "Open-Sans";
+}
+
+h2 {
+    font-family: "Open-Sans";
 }
