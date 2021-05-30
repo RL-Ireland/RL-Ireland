@@ -22,13 +22,24 @@ h2 {
 }
 
 .header {
-    float: left;
+    padding-top: 1em;
+    display: inline;
+}
+
+.content {
+    float: center;
+    clear: both;
+}
+
+.shortcuts {
+    background-color: #45B649;
+    margin-left: none;
+    padding-left: 1em;
 }
 
 .RLI-logo {
     max-width: 4%;
     max-height: 4%;
-    float: left;
 }
 
 ul {
@@ -38,11 +49,21 @@ ul {
 ul li {
     list-style: none;
     display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 ul li a {
     text-decoration: none;
     color: black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 2em;
+    transition: 0.2s;
+}
+
+ul li a:hover {
+    color: #EF6423;
 }
 
 p {
@@ -60,6 +81,7 @@ p {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    font-size: 1.5em;
 }
 
 .text-button {
@@ -68,6 +90,7 @@ p {
     background: none;
     padding: none;
     margin: none;
+    font-size: 1.5em;
 }
 
 .text-button:hover {

@@ -16,3 +16,16 @@ function langChange() {
         location.reload();
     }
 }
+
+// Loads page with language choices
+window.onload = function() {
+    if (lang == 1) {
+        return document.getElementById("homepageTitle").innerHTML = `Welcome to the RL Ireland Wiki!`;
+    } else if (lang == 2) {
+        return document.getElementById("homepageTitle").innerHTML = `Fáilte go dtí Wiki RL Ireland!`;
+    } else {
+        return console.log("Error: language not loaded correctly");
+    }
+}
+
+console.log(localStorage.getItem(lang, lang));
