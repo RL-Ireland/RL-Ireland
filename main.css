@@ -4,10 +4,31 @@
     src: url("fonts/opensans-regular-webfont.ttf") format("ttf"), url("fonts/opensans-regular-webfont.woff") format("woff"), url("fonts/opensans-regular-webfont.woff2") format("woff2");
 }
 
+* {
+    font-family: "Open-Sans";
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     font-family: "Open-Sans";
     font-weight: bold;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: "Open-Sans";
+    font-size: 2.5em;
+}
+
+.header {
+    float: left;
+}
+
+.RLI-logo {
+    max-width: 4%;
+    max-height: 4%;
+    float: left;
 }
 
 ul {
@@ -16,7 +37,7 @@ ul {
 
 ul li {
     list-style: none;
-    display: block;
+    display: inline-block;
 }
 
 ul li a {
@@ -28,6 +49,27 @@ p {
     font-family: "Open-Sans";
 }
 
-h2 {
-    font-family: "Open-Sans";
+.bottom-banner {
+    background-color: #45B649;
+    margin-left: 0;
+    margin-top: 5;
+    margin-bottom: 0;
+}
+
+.bottom-banner-text {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.text-button {
+    color: #EF6423;
+    border: none;
+    background: none;
+    padding: none;
+    margin: none;
+}
+
+.text-button:hover {
+    color: #E19226;
 }
