@@ -1,31 +1,43 @@
-// Declares variable for storing language cookie, 1 is english, 2 is irish
-var lang = 1;
+// Checks if its the first time loading the site
+var firstTime = localStorage.getItem("loadedBefore");
 
-// Stores cookie of language setting
-localStorage.setItem(lang, lang);
+// Stores cookie of loadedBefore if its the first time
+if (!firstTime) {
+    localStorage.setItem("loadedBefore", 1)
+    localStorage.setItem("lang", 1);
+}
 
 // Changes language and stores cookie once changed
 function langChange() {
-    if (lang == 1) {
-        lang = 2;
-        localStorage.setItem(lang, lang);
-        location.reload();
-    } else {
-        lang = 1;
-        localStorage.setItem(lang, lang);
+    if (localStorage.getItem("lang") == 1) {
+        localStorage.setItem("lang", 2);
+        return location.reload();
+    } else if (localStorage.getItem("lang") == 2) {
+        localStorage.setItem("lang", 1);
         location.reload();
     }
 }
 
-// Loads page with language choices
+// Loads page with language choices for title
 window.onload = function() {
-    if (lang == 1) {
+    if (localStorage.getItem("lang") == 1) {
         return document.getElementById("homepageTitle").innerHTML = `Welcome to the RL Ireland Wiki!`;
-    } else if (lang == 2) {
+    } else if (localStorage.getItem("lang") == 2) {
         return document.getElementById("homepageTitle").innerHTML = `Fáilte go dtí Wiki RL Ireland!`;
     } else {
         return console.log("Error: language not loaded correctly");
     }
 }
 
-console.log(localStorage.getItem(lang, lang));
+// Loads page with language choices
+window.onload = function() {
+    if (localStorage.getItem("lang") == 1) {
+        return document.getElementById("innerPageContent").innerHTML = `This is a wiki for all things RLI`;
+    } else if (localStorage.getItem("lang") == 2) {
+        return document.getElementById("innerPageContent").innerHTML = `Fáilte go dtí Wiki RL Ireland!`;
+    } else {
+        return console.log("Error: language not loaded correctly");
+    }
+}
+
+console.log(localStorage.getItem("lang"));
