@@ -12,7 +12,12 @@ const dict = {
         a place where they could find teammates and hold tournaments. He told Joseph about this, and when Joseph got home, he made the Facebook page. 
         And that is how RLI began.
         </p>`,
-        ga: `Is é seo wiki fa choinne RLI`
+        ga: `<h2>Bunús</h2>
+        <p>Bhí RLI crúthaithe i gcúinsí conspóideach, dar ndóigh. Is é seo an scéal <strong>go bhfios dúinn</strong>.\n
+        Bhí dhá leaid ó Tír Chonaill darbh ainm Joseph agus Darcy (tá seans ann gur chuala tú faofa) sa tríú bhliain ar scoil. Ní raibh a fhios acu ar mórann daoine thart orthu a d'imir Rocket League.
+        Mar sin, bhí an smaoineamh ag Darcy "Rocket League Ireland" a chrúthú, áit a dtiocfadh le imreoirí Éireannach a theacht le chéile agus imirt le chéile,
+        áit a dtiocfadh leo cairde a dhéanamh agus comórtais a chrúthú. D'inis Darcy seo do Joseph, agus chomh luath agus a bhí Joseph sa bhaile, chruthaigh sé an leatheanach Facebook.
+        Agus is é sin an dóigh gur thoisigh Rocket League Ireland.</p>`
     },
     langChangeText: {
         en: `Tá an leitheanach seo ar fáil i <button type="button" onclick="langChange()" class="text-button"><strong>nGaeilge</strong></button>.`,
@@ -50,7 +55,7 @@ if (localStorage.getItem("lang") == 1) {
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.en;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.en;
 } else if (localStorage.getItem("lang") == 2) {
-    document.getElementById("timelineTitle").innerHTML = dict.mainTitle.ga;
+    document.getElementById("timelineTitle").innerHTML = dict.timeTitle.ga;
     document.getElementById("innerPageContent").innerHTML = dict.pageContent.ga;
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.ga;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.ga;
