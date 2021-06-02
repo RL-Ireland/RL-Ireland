@@ -50,12 +50,12 @@ function langChange() {
 
 // Loads page with language choices for title
 if (localStorage.getItem("lang") == 1) {
-    document.getElementById("timelineTitle").innerHTML = dict.timeTitle.en;
+    document.getElementById("timelineTitle").innerHTML = dict.timelineTitle.en;
     document.getElementById("innerPageContent").innerHTML = dict.pageContent.en;
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.en;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.en;
 } else if (localStorage.getItem("lang") == 2) {
-    document.getElementById("timelineTitle").innerHTML = dict.timeTitle.ga;
+    document.getElementById("timelineTitle").innerHTML = dict.timelineTitle.ga;
     document.getElementById("innerPageContent").innerHTML = dict.pageContent.ga;
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.ga;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.ga;
