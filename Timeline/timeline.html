@@ -11,37 +11,32 @@
 
     <div class="header">
 
-        <div class="logo">
-            <a href="../index.html"><img src="../RLI_logo_1.png" alt="Rocket League Ireland logo" class="RLI-logo"></a>
-        </div>
+        <a href="index.html"><img src="RLI_logo_1.png" alt="Rocket League Ireland logo" class="RLI-logo"></a>
 
         <ul class="shortcuts">
-            <nav>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="timeline.html">Timeline</a></li>
-                <li><a href="Running-Jokes/running-jokes.html">Running Jokes</a></li>
-                <li><a href="Copypastas/copypastas.html">Copypastas</a></li>
-                <li><a href="Personalities/personalities.html">Personalities</a></li>
-            </nav>
+            <nav id="headerBanner"></nav>
         </ul>
 
     </div>
 
-    <h1>The Timeline of RL Ireland</h1>
+    <div class="content">
 
-    <h2>Origins</h2>
+        <h1 id="timelineTitle"></h1>
 
-    <p id="origins" onload="displayOrigins()"></p>
+        <p id="innerPageContent"></p>
+
+    </div>
 
     <div class="bottom-banner">
         <div class="bottom-banner-text">
-            Tá an leitheanach seo ar fáil i <button type="button" onclick="langChange()" class="text-button"><strong>nGaeilge</strong></button>.
+            <p id="langChangeText"></p>
         </div>
     </div>
 
-    <script src="timeline.js"></script>
-    <script src="../main.js"></script>
+    <script src="main.js"></script>
 
 </body>
+
+</html>
 
 </html>
