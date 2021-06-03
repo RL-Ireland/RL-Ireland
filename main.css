@@ -97,3 +97,8 @@ p {
 .text-button:hover {
     color: #E19226;
 }
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+}
