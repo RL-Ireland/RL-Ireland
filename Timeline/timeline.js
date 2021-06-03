@@ -31,12 +31,12 @@ const dict = {
         Walshy should also get a small mention here for willingly donating in-game items for the prize pools of the occasional tournament that was organised.<br><br>
         The Games eXpo Ireland LAN took place in the RDS in Dublin on the 26th of November, with Daithi and XDarkArcticX winning, LTXSam and Warfare coming second and Dave Forehead and
         Enwrong commentating. Dave Forehead later posted to Facebook about the GXI LAN that kickstarted the revival of RLI.
-        <img src="../assets/Dave Forehead FB post.png" alt="A picture of Dave Forehead's post on Facebook.">
+        <img src="../assets/Dave-Forehead-FB-post.png" alt="A picture of Dave Forehead's post on Facebook.">
         On the 28th of November, Dave Forehead was promoted to admin of the Facebook page by Darcy and XtremeNolaner gave him ownership of the discord server. Enwrong was also made admin on both platforms.
         The first staff meeting happened a day later between the four admins and the newest staff members, who were offered a place based on how long they'd been in the community and how active they'd been.
         They were Tully, Walshy and Daithi. The RLI twitter account was made on the 30th of November.<br><br>
         The first tournament RLI ever streamed was a 2v2 christmas event on the 3rd of December, won by Dry and Fusure. Back then we had tiered tournaments.
-        <img src="../assets/RLI christmas 2v2 tournament results.jpg" alt="A spreadsheet of the tournament results."><br><br>
+        <img src="../assets/RLI-christmas-2v2-tournament-results.jpg" alt="A spreadsheet of the tournament results."><br><br>
         The Dry vs McCluvin 1v1 showmatch helped bring RLI to the attention of people outside of Ireland for probably the first time, with help from DigitalBacon.
         Dry was constantly in the top 10 on the 1s leaderboard in the world at the time, and appeared on JohnnyBoi's stream.</p>
         <h2>2018</h2>
@@ -54,7 +54,7 @@ const dict = {
         On the 24th of June, the Q-Con 2v2 LAN took place in Belfast, which was considered a massive success. Mugg and Fusure won with Dry and Crungus came second. Dave Forehead and Tully did most of the commentating on
         the day with the occasional interview and guest caster throughout the day. Darcy adminned the event, with help from Dannyboy. RLI merchandise was available for the first time at this point, with black and white hoodies
         and t-shirts on offer.
-        <img src="../assets/RLI belfast lan picture.jpg" alt="A picture of everyone from the Q-Con LAN together."><br><br>
+        <img src="../assets/RLI-belfast-lan-picture.jpg" alt="A picture of everyone from the Q-Con LAN together."><br><br>
         Redeyes won the Seasonal Elite Championship on the 13th of July. The concept of the tournament (attributed to Enwrong) was that a player's performance in the tournament was converted to points, and the top 6 played a 6mans tournament to
         decide a winner.
 
