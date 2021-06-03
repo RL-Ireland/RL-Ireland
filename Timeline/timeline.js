@@ -118,16 +118,3 @@ if (localStorage.getItem("lang") == 1) {
 } else {
     console.log("Error: language not loaded correctly");
 }
-
-// When the user scrolls down 30px from the top of the document, resize the header's font size
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        document.getElementsByClassName("RLI-logo").style.maxwidth = "1%";
-        document.getElementsByClassName("RLI-logo").style.maxheight = "1%";
-    } else {
-        document.getElementsByClassName("RLI-logo").style.maxwidth = "4%";
-        document.getElementsByClassName("RLI-logo").style.maxheight = "4%";
-    }
-}
