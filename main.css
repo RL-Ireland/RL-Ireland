@@ -24,6 +24,7 @@ h2 {
 .header {
     padding-top: 1em;
     display: inline;
+    position: fixed;
 }
 
 .content {
@@ -40,6 +41,7 @@ h2 {
 .RLI-logo {
     max-width: 4%;
     max-height: 4%;
+    transition: 0.2s;
 }
 
 ul {
@@ -69,6 +71,7 @@ ul li a:hover {
 p {
     font-family: "Open-Sans";
     margin-right: 10%;
+    margin-left: 10%;
 }
 
 .bottom-banner {

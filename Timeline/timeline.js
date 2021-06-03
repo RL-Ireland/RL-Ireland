@@ -1,3 +1,12 @@
+// Checks if its the first time loading the site
+var firstTime = localStorage.getItem("loadedBefore");
+
+// Stores cookie of loadedBefore if its the first time
+if (!firstTime) {
+    localStorage.setItem("loadedBefore", 1)
+    localStorage.setItem("lang", 1);
+}
+
 // Stores a dictionary of all text to be displayed
 const dict = {
     timelineTitle: {
@@ -108,4 +117,17 @@ if (localStorage.getItem("lang") == 1) {
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.ga;
 } else {
     console.log("Error: language not loaded correctly");
+}
+
+// When the user scrolls down 30px from the top of the document, resize the header's font size
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementsByClassName("RLI-logo").style.maxwidth = "1%";
+        document.getElementsByClassName("RLI-logo").style.maxheight = "1%";
+    } else {
+        document.getElementsByClassName("RLI-logo").style.maxwidth = "4%";
+        document.getElementsByClassName("RLI-logo").style.maxheight = "4%";
+    }
 }

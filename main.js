@@ -22,16 +22,16 @@ const dict = {
         ga: `This page is available in <button type="button" onclick="langChange()" class="text-button"><strong>English</strong></button>.`
     },
     headerBanner: {
-        en: `<li><a href="index.html">Home</a></li>
-        <li><a href="Timeline/timeline.html">Timeline</a></li>
-        <li><a href="Running-Jokes/running-jokes.html">Running Jokes</a></li>
-        <li><a href="Copypastas/copypastas.html">Copypastas</a></li>
-        <li><a href="Personalities/personalities.html">Personalities</a></li>`,
-        ga: `<li><a href="index.html">Baile</a></li>
-        <li><a href="Timeline/timeline.html">Amlíne</a></li>
-        <li><a href="Running-Jokes/running-jokes.html">Ábhair Grinn</a></li>
-        <li><a href="Copypastas/copypastas.html">Turscar</a></li>
-        <li><a href="Personalities/personalities.html">Pearsantachtaí</a></li>`
+        en: `<li><a href="../index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="../Quotes/quotes.html">Quotes</a></li>
+        <li><a href="../Tournaments/tournaments.html">Tournaments</a></li>
+        <li><a href="../Personalities/personalities.html">Personalities</a></li>`,
+        ga: `<li><a href="../index.html">Baile</a></li>
+        <li><a href="timeline.html">Amlíne</a></li>
+        <li><a href="../Quotes/quotes.html">Frásaí</a></li>
+        <li><a href="../Tournaments/tournaments.html">Turnaimint</a></li>
+        <li><a href="../Personalities/personalities.html">Pearsantachtaí</a></li>`
     }
 }
 
@@ -59,4 +59,15 @@ if (localStorage.getItem("lang") == 1) {
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.ga;
 } else {
     console.log("Error: language not loaded correctly");
+}
+
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementsByClassName("header").style.fontSize = "30px";
+    } else {
+        document.getElementsByClassName("header").style.fontSize = "90px";
+    }
 }
