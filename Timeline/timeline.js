@@ -40,12 +40,12 @@ const dict = {
         Walshy should also get a small mention here for willingly donating in-game items for the prize pools of the occasional tournament that was organised.<br><br>
         The Games eXpo Ireland LAN took place in the RDS in Dublin on the 26th of November, with Daithi and XDarkArcticX winning, LTXSam and Warfare coming second and Dave Forehead and
         Enwrong commentating. Dave Forehead later posted to Facebook about the GXI LAN that kickstarted the revival of RLI.
-        <br><img src="../assets/Dave-Forehead-FB-post.png" alt="A picture of Dave Forehead's post on Facebook."><br>
+        <br><br><img src="../assets/Dave-Forehead-FB-post.png" alt="A picture of Dave Forehead's post on Facebook."><br><br>
         On the 28th of November, Dave Forehead was promoted to admin of the Facebook page by Darcy and XtremeNolaner gave him ownership of the discord server. Enwrong was also made admin on both platforms.
         The first staff meeting happened a day later between the four admins and the newest staff members, who were offered a place based on how long they'd been in the community and how active they'd been.
         They were Tully, Walshy and Daithi. The RLI twitter account was made on the 30th of November.<br><br>
         The first tournament RLI ever streamed was a 2v2 christmas event on the 3rd of December, won by Dry and Fusure. Back then we had tiered tournaments.
-        <br><img src="../assets/RLI-christmas-2v2-tournament-results.jpg" alt="A spreadsheet of the tournament results."><br><br>
+        <br><br><img src="../assets/RLI-christmas-2v2-tournament-results.jpg" alt="A spreadsheet of the tournament results."><br><br>
         The Dry vs McCluvin 1v1 showmatch helped bring RLI to the attention of people outside of Ireland for probably the first time, with help from DigitalBacon.
         Dry was constantly in the top 10 on the 1s leaderboard in the world at the time, and appeared on JohnnyBoi's stream.</p>
         <h2>2018</h2>
@@ -65,9 +65,18 @@ const dict = {
         and t-shirts on offer.
         <br><img src="../assets/RLI-belfast-lan-picture.jpg" alt="A picture of everyone from the Q-Con LAN together."><br><br>
         Redeyes won the Seasonal Elite Championship on the 13th of July. The concept of the tournament (attributed to Enwrong) was that a player's performance in the tournament was converted to points, and the top 6 played a 6mans tournament to
-        decide a winner.
-
-        </p>`,
+        decide a winner.<br><br>
+        The Dublin Games Festival (DGF) LAN took place on the 24th of November, with The Dubliners, consisting of ItsPureLogic, Mugg and Fusure, winning and Aviators, made up of Enwrong, Pandaa and Durkan, coming second in a final that finished a minute before the internet would be turned off.
+        Dave Forehead adminned the event, and ran a last minute stream off of his computer.<br><br>
+        <img src="../assets/picture-of-dgf-lan.jpg" alt="A picture of the DGF LAN with people at the computers playing."><br><br>
+        On the 7th of December, Redeyes became our Seasonal Elite Champion for the second time in a row.</p>
+        <h2>2019</h2>
+        <p>
+        Enwrong started the 6mans league again on the 8th of January, which turned out to be much more successful than his previous attempt back in 2016, with over 30 participants and 4 divisions. Demoqz won it the first month.<br><br>
+        RLI-Times was introduced on the 7th of February, a text channel within the Discord server run by Ghost and Blah that posted about what was going on in the RLI server from time to time.<br><br>
+        RLI announced on the 8th of March that it planned to host it’s own LAN event for the first time ever in a gaming bar down in Cork.
+        </p>
+        `,
         ga: `<h2>Bunús</h2>
         <p>Bhí RLI crúthaithe i gcúinsí conspóideach, dar ndóigh. Is é seo an scéal <strong>go bhfios dúinn</strong>.<br>
         Bhí dhá leaid ó Tír Chonaill darbh ainm Joseph agus Darcy (tá seans ann gur chuala tú faofa) sa tríú bhliain ar scoil. Ní raibh a fhios acu ar mórann daoine thart orthu a d'imir Rocket League.
