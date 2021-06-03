@@ -9,29 +9,29 @@ if (!firstTime) {
 
 // Stores a dictionary of all text to be displayed
 const dict = {
-    mainTitle: {
-        en: `Welcome to the RL Ireland Wiki!`,
-        ga: `Fáilte go dtí Wiki RL Ireland!`
+    title: {
+        en: `RLI's Celebrities`,
+        ga: `Daoine Cáiliúil as RLI`
     },
-    mainContent: {
-        en: `This is a wiki for all things RLI`,
-        ga: `Is é seo wiki fa choinne RLI`
+    pageContent: {
+        en: ``,
+        ga: ``
     },
     langChangeText: {
         en: `Tá an leitheanach seo ar fáil i <button type="button" onclick="langChange()" class="text-button"><strong>nGaeilge</strong></button>.`,
         ga: `This page is available in <button type="button" onclick="langChange()" class="text-button"><strong>English</strong></button>.`
     },
     headerBanner: {
-        en: `<li><a href="index.html">Home</a></li>
-        <li><a href="Timeline/timeline.html">Timeline</a></li>
-        <li><a href="Quotes/quotes.html">Quotes</a></li>
-        <li><a href="Tournaments/tournaments.html">Tournaments</a></li>
-        <li><a href="Personalities/personalities.html">Personalities</a></li>`,
-        ga: `<li><a href="index.html">Baile</a></li>
-        <li><a href="Timeline/timeline.html">Amlíne</a></li>
-        <li><a href="Quotes/quotes.html">Frásaí</a></li>
-        <li><a href="Tournaments/tournaments.html">Turnaimint</a></li>
-        <li><a href="Personalities/personalities.html">Pearsantachtaí</a></li>`
+        en: `<li><a href="../index.html">Home</a></li>
+        <li><a href="../Timeline/timeline.html">Timeline</a></li>
+        <li><a href="../Quotes/quotes.html">Quotes</a></li>
+        <li><a href="../Tournaments/tournaments.html">Tournaments</a></li>
+        <li><a href="personalities.html">Personalities</a></li>`,
+        ga: `<li><a href="../index.html">Baile</a></li>
+        <li><a href="../Timeline/timeline.html">Amlíne</a></li>
+        <li><a href="../Quotes/quotes.html">Frásaí</a></li>
+        <li><a href="../Tournaments/tournaments.html">Turnaimint</a></li>
+        <li><a href="personalities.html">Pearsantachtaí</a></li>`
     }
 }
 
@@ -48,13 +48,13 @@ function langChange() {
 
 // Loads page with language choices for title
 if (localStorage.getItem("lang") == 1) {
-    document.getElementById("title").innerHTML = dict.mainTitle.en;
-    document.getElementById("innerPageContent").innerHTML = dict.mainContent.en;
+    document.getElementById("title").innerHTML = dict.title.en;
+    document.getElementById("innerPageContent").innerHTML = dict.pageContent.en;
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.en;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.en;
 } else if (localStorage.getItem("lang") == 2) {
-    document.getElementById("title").innerHTML = dict.mainTitle.ga;
-    document.getElementById("innerPageContent").innerHTML = dict.mainContent.ga;
+    document.getElementById("title").innerHTML = dict.title.ga;
+    document.getElementById("innerPageContent").innerHTML = dict.pageContent.ga;
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.ga;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.ga;
 } else {
