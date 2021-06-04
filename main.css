@@ -104,3 +104,18 @@ img {
     max-width: 50%;
     max-height: 50%;
 }
+
+#current-page {
+    background-color: #E19226;
+    text-shadow: grey;
+    color: black;
+    padding-top: none;
+    padding-bottom: none;
+    transition: 0.1s;
+}
+
+#current-page:hover {
+    background-color: #45B649;
+    text-shadow: none;
+    color: #EF6423;
+}

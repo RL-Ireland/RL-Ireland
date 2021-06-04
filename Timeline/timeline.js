@@ -90,12 +90,12 @@ const dict = {
     },
     headerBanner: {
         en: `<li><a href="../index.html">Home</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="timeline.html" id="current-page">Timeline</a></li>
         <li><a href="../Quotes/quotes.html">Quotes</a></li>
         <li><a href="../Tournaments/tournaments.html">Tournaments</a></li>
         <li><a href="../Personalities/personalities.html">Personalities</a></li>`,
         ga: `<li><a href="../index.html">Baile</a></li>
-        <li><a href="timeline.html">Amlíne</a></li>
+        <li><a href="timeline.html" id="current-page">Amlíne</a></li>
         <li><a href="../Quotes/quotes.html">Frásaí</a></li>
         <li><a href="../Tournaments/tournaments.html">Turnaimint</a></li>
         <li><a href="../Personalities/personalities.html">Pearsantachtaí</a></li>`

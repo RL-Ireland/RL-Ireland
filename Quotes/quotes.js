@@ -24,12 +24,12 @@ const dict = {
     headerBanner: {
         en: `<li><a href="../index.html">Home</a></li>
         <li><a href="../Timeline/timeline.html">Timeline</a></li>
-        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="quotes.html" id="current-page">Quotes</a></li>
         <li><a href="../Tournaments/tournaments.html">Tournaments</a></li>
         <li><a href="../Personalities/personalities.html">Personalities</a></li>`,
         ga: `<li><a href="../index.html">Baile</a></li>
         <li><a href="../Timeline/timeline.html">Amlíne</a></li>
-        <li><a href="quotes.html">Frásaí</a></li>
+        <li><a href="quotes.html" id="current-page">Frásaí</a></li>
         <li><a href="../Tournaments/tournaments.html">Turnaimint</a></li>
         <li><a href="../Personalities/personalities.html">Pearsantachtaí</a></li>`
     }
