@@ -74,7 +74,14 @@ const dict = {
         <p>
         Enwrong started the 6mans league again on the 8th of January, which turned out to be much more successful than his previous attempt back in 2016, with over 30 participants and 4 divisions. Demoqz won it the first month.<br><br>
         RLI-Times was introduced on the 7th of February, a text channel within the Discord server run by Ghost and Blah that posted about what was going on in the RLI server from time to time.<br><br>
-        RLI announced on the 8th of March that it planned to host it’s own LAN event for the first time ever in a gaming bar down in Cork.
+        RLI announced on the 8th of March that it planned to host it’s own LAN event for the first time ever in a gaming bar down in Cork.<br><br>
+        On the 13th of March, Tully got demoted from Operator while Pandaa was promoted to Operator. On the 16th, carrickdan and John_Aka_Alwayz got promoted to Moderator, and RLI opened its Moderator applications for the second time. Captain Qwark left the staff team on the 6th of April to focus on exams<br><br>
+        On the 7th of April, RLI was officially announced as European Games Week's Rocket League partner for their LAN event in June.<br><br>
+        Daithí and Barzey left the staff team to focus on exams on the 8th of April.<br><br>
+        RLI held it's first ever self-run LAN event on the 20th of April. Suitably called the RLI LAN, it took place in the 365itHub in Cork. It was a 3v3 LAN with 12 teams entering. Joseph (with help from Walshy) ran the event. Lynxi took a lot of photos for himself and for RLI, and subbed in for a team (?) last minute. Dave Forehead and NuaLaoch casted the event with people coming in for casual interviews now and again. Most importantly, the event was won by FML, consisting of Fusure, Mugg and ItsPureLogic, with Yurt (Walshy, Adzer and Demoqz) coming second and Nuclear Storm Gaming (Enwrong, Arctic and Pandaa) coming third. Adzer was named MVP of the tournament and Pat. was given the Redeyes Redemption award, for playing the most above expectations, funded by JToPrey (who won a giveaway on Redeyes' stream, hence the name).<br><br>
+        Carrickdan and John_aka_Alwayz got promoted to Operator on the day as well.<br><br>
+        <img src="../assets/rli-lan.jpeg" alt="A picture of the RLI LAN"><br><br>
+        
         </p>
         `,
         ga: `<h2>Bunús</h2>
