@@ -79,7 +79,7 @@ const dict = {
         On the 7th of April, RLI was officially announced as European Games Week's Rocket League partner for their LAN event in June.<br><br>
         Daithí and Barzey left the staff team to focus on exams on the 8th of April.<br><br>
         RLI held it's first ever self-run LAN event on the 20th of April. Suitably called the RLI LAN, it took place in the 365itHub in Cork. It was a 3v3 LAN with 12 teams entering. Joseph (with help from Walshy) ran the event. Lynxi took a lot of photos for himself and for RLI, and subbed in for a team (?) last minute. Dave Forehead and NuaLaoch casted the event with people coming in for casual interviews now and again. Most importantly, the event was won by FML, consisting of Fusure, Mugg and ItsPureLogic, with Yurt (Walshy, Adzer and Demoqz) coming second and Nuclear Storm Gaming (Enwrong, Arctic and Pandaa) coming third. Adzer was named MVP of the tournament and Pat. was given the Redeyes Redemption award, for playing the most above expectations, funded by JToPrey (who won a giveaway on Redeyes' stream, hence the name).<br><br>
-        Carrickdan and John_aka_Alwayz got promoted to Operator on the day as well.<br><br>
+        Carrickdan and John_aka_Alwayz got promoted to Operator on the day as well. Shortly after, <br><br>
         <img src="../assets/rli-lan.jpeg" alt="A picture of the RLI LAN"><br><br>
         
         </p>
