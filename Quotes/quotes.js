@@ -18,7 +18,7 @@ const dict = {
         ga: ``
     },
     langChangeText: {
-        en: `Tá an leitheanach seo ar fáil i <button type="button" onclick="langChange()" class="text-button"><strong>nGaeilge</strong></button>.`,
+        en: `Tá an leatheanach seo ar fáil i <button type="button" onclick="langChange()" class="text-button"><strong>nGaeilge</strong></button>.`,
         ga: `This page is available in <button type="button" onclick="langChange()" class="text-button"><strong>English</strong></button>.`
     },
     headerBanner: {
