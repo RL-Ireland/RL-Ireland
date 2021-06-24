@@ -129,14 +129,15 @@ a {
 }
 
 a:link {
-    background-color: #E19226;
+    background-color: yellow;
     color: black;
+    background: 50%;
 }
 
 a:hover {
-    background-color: #EF6423;
+    background-color: #E19226;
 }
 
 a:visited {
-    background-color: #EF6423;
+    text-decoration: none;
 }
