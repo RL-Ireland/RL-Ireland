@@ -35,6 +35,7 @@ h2 {
     background-color: #45B649;
     margin-left: none;
     padding-left: 1em;
+    color: black;
 }
 
 .RLI-logo {
@@ -127,13 +128,13 @@ a {
 }
 
 a:link {
-    color: #E19226;
+    background-color: #E19226;
 }
 
 a:hover {
-    color: #EF6423;
+    background-color: #EF6423;
 }
 
 a:visited {
-    color: #EF6423;
+    background-color: #EF6423;
 }
