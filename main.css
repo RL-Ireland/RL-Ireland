@@ -119,3 +119,21 @@ img {
     text-shadow: none;
     color: #EF6423;
 }
+
+a {
+    text-decoration: none;
+    outline: none;
+    transition: 0.1s;
+}
+
+a:link {
+    color: #E19226;
+}
+
+a:hover {
+    color: #EF6423;
+}
+
+a:visited {
+    color: #EF6423;
+}
