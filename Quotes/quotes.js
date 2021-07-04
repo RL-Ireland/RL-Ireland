@@ -48,12 +48,12 @@ function langChange() {
 
 // Loads page with language choices for title
 if (localStorage.getItem("lang") == 1) {
-    document.getElementById("quotesTitle").innerHTML = dict.title.en;
+    document.getElementById("title").innerHTML = dict.title.en;
     document.getElementById("innerPageContent").innerHTML = dict.pageContent.en;
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.en;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.en;
 } else if (localStorage.getItem("lang") == 2) {
-    document.getElementById("quotesTitle").innerHTML = dict.title.ga;
+    document.getElementById("title").innerHTML = dict.title.ga;
     document.getElementById("innerPageContent").innerHTML = dict.pageContent.ga;
     document.getElementById("langChangeText").innerHTML = dict.langChangeText.ga;
     document.getElementById("headerBanner").innerHTML = dict.headerBanner.ga;

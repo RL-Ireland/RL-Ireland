@@ -114,7 +114,8 @@ const dict = {
         <a href="https://liquipedia.net/rocketleague/RL_Ireland/WYLDE_Rocket_Series/April">WRS Monthly #3</a> took place on the 25th of April with Me and the Boys (Robkiernxn, Spectre and Shallow) getting revenge over DogWithALog (Yem, Colin and HammerSt/Wazzito).<br><br>JaRyan left the staff team on the 1st of May, followed by Ryan on the 6th, and then Wrench on the 18th.<br><br><a href="https://liquipedia.net/rocketleague/RL_Ireland/WYLDE_Rocket_Series/May">WRS Monthly #4</a> took place on the 23rd of May with new winner Carbon Zero (Shane, Futura and NKS) beating Hoovers (Smokez, Trace (formerly Cian) and Staar) in the final.<br><br>The Seasonal Solo Standard cup took place on the 30th of May with LTXSam, Finbarr and barmanitan winning in the final against Mul, Gillzo and P1ayer 0n3.<br><br>
         The original <a href="https://docs.google.com/document/d/1oW8iqr8yDmqB2GQdnPGQaZ48TGfP0UFd122TOVHryPg/edit?usp=sharing">history book</a> was updated on the 3rd of June, as Dave Forehead had grown lazy, leaving Lynsk to pick up the slack.<br><br>Wylde and RLI partnered up for a giveaway on the 11th of June. The winners would receive some lovely Wylde merch when the draw happened after WRS Monthly #5.<br><br><a href="https://liquipedia.net/rocketleague/RL_Ireland/WYLDE_Rocket_Series/June">WRS Monthly #5</a> took place on the 13th of June, with Me and the Boys (Shallow, Robkiernxn and Spectre) taking the win over DogWithALog (Colin, Yem and HammersSt/Wazzito). Afterwards, the draw for the giveaway happened, with AdequateLlama, Murph and most importantly YummyUranium winning.<br><br>On 15th of June, Squid-G left the staff team. As the staff had lately been dropping like flies, Dave Forehead opened staff applications the day after.<br><br>
         On the 19th of June, a competitive ruling was announced after it had been discovered that Colin, Yem and HammerSt, who made up the team of DogWithALog, had been intending to cheat in the upcoming WRS Major. They intended to have another player, called Wazzito, who had previously been banned from RLI, play on HammerSt’s account. As well as this, they approached a high-level external bubble player to play on Colin’s account. There was a veritable shitshow in #general in the hours following, with a few more people getting bans and mutes. #general was locked for the night, and #memes-nsfw was hidden.<br><br>
-        The staff application form deadline was moved twice, first to the 26th of June, and the to the 22nd, as the Major was coming up and Moderators were desperately needed to handle the event well. On June 22nd, the 5 new Moderators were announced: YummyUranium, Bonkersbott, Dlynch, Panicjungle and Jacko.
+        The staff application form deadline was moved twice, first to the 26th of June, and the to the 22nd, as the Major was coming up and Moderators were desperately needed to handle the event well. On June 22nd, the 5 new Moderators were announced: YummyUranium, Bonkersbott, Dlynch, Panicjungle and Jacko.<br><br>
+        The <a href="https://liquipedia.net/rocketleague/RL_Ireland/WYLDE_Rocket_Series">WRS Major</a> took place on the 27th of June, and it ran smoothly enough overall. Me and the Boys (Shallow, Robkiernxn and Spectre) took the win over Hoovers (Trace, Smokez and Staar) taking home the big prize of €570. Carbon Zero and Bababooey came 3rd and 4th respectively. 
         </p>
         `,
         ga: `<h2>Bunús</h2>
@@ -130,14 +131,12 @@ const dict = {
     },
     headerBanner: {
         en: `
-        <li><a href="../index.html"><img src="../RLI_logo_1.png" alt="RL Ireland logo" class="logo"></a></li>
         <li><a href="../index.html">Home</a></li>
         <li><a href="timeline.html" id="current-page">Timeline</a></li>
         <li><a href="../Quotes/quotes.html">Quotes</a></li>
         <li><a href="../Tournaments/tournaments.html">Tournaments</a></li>
         <li><a href="../Personalities/personalities.html">Personalities</a></li>`,
         ga: `
-        <li><a href="../index.html"><img src="../RLI_logo_1.png" alt="RL Ireland logo" class="logo"></a></li>
         <li><a href="../index.html">Baile</a></li>
         <li><a href="timeline.html" id="current-page">Amlíne</a></li>
         <li><a href="../Quotes/quotes.html">Frásaí</a></li>

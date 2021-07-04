@@ -21,23 +21,29 @@ h2 {
     font-size: 2.5em;
 }
 
-.logo {
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 40px;
-    background-color: none;
-    background-color: none;
-}
-
 .header {
     font-size: 14px;
     align-items: center;
-    background-color: #45B649;
     margin-top: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.shortcuts {
+    display: flex;
+    background-color: #45B649;
+    position: sticky;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    padding: 0.5%;
 }
 
 .content {
-    float: center;
     clear: both;
 }
 
@@ -66,7 +72,7 @@ p {
     border: none;
     background: none;
     padding: none;
-    margin: none;
+    margin: 0;
     font-size: 1.5em;
 }
 
@@ -94,12 +100,8 @@ img:hover {
 }
 
 #current-page:hover {
-    background-color: #45B649;
+    background-color: green;
     text-shadow: none;
-    color: #EF6423;
-}
-
-#current-page:visited {
     color: black;
 }
 
@@ -110,36 +112,28 @@ img:hover {
     align-content: center;
     justify-content: center;
     align-items: center;
-}
-
-.shortcuts {
-    display: flex;
-    position: sticky;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    width: 80vw;
 }
 
 ul {
     font-family: "Open-Sans";
+    margin: 0;
 }
 
 ul li {
     list-style: none;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-left: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 ul li a {
     text-decoration: none;
     color: black;
     background-color: none;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
     font-size: 2em;
     transition: 0.2s;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 ul li a:hover {
