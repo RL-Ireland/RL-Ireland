@@ -21,10 +21,9 @@ h2 {
     font-size: 2.5em;
 }
 
-.header {
+header {
     font-size: 14px;
     align-items: center;
-    margin-top: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,7 +43,9 @@ h2 {
 }
 
 .content {
-    clear: both;
+    margin-top: 60px;
+    overflow: auto;
+    text-align: justify;
 }
 
 p {
@@ -56,14 +57,13 @@ p {
 .bottom-banner {
     background-color: #45B649;
     margin-left: 0;
-    margin-top: 5;
     margin-bottom: 0;
 }
 
 .bottom-banner-text {
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     font-size: 1.5em;
 }
 
@@ -115,6 +115,25 @@ img:hover {
     width: 80vw;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+    transition: 0.1s;
+}
+
+a:link {
+    color: green;
+}
+
+a:hover {
+    background-color: grey;
+}
+
+a:visited {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
 ul {
     font-family: "Open-Sans";
     margin: 0;
@@ -134,6 +153,7 @@ ul li a {
     transition: 0.2s;
     padding-left: 5px;
     padding-right: 5px;
+    border-radius: 0.2rem;
 }
 
 ul li a:hover {
@@ -149,21 +169,20 @@ ul li a:visited:hover {
     background-color: #EF6423;
 }
 
-a {
-    text-decoration: none;
-    outline: none;
-    transition: 0.1s;
+#login {
+    color: white;
+    background-color: green;
+    border-color: green;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    transition: 0.2s;
 }
 
-a:link {
-    color: green;
-}
-
-a:hover {
-    background-color: grey;
-}
-
-a:visited {
-    text-decoration: none;
-    color: yellowgreen;
+#login:hover {
+    color: black;
+    background-color: orange;
+    border-color: orange;
 }
