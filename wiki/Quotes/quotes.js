@@ -10,8 +10,8 @@ if (!firstTime) {
 // Stores a dictionary of all text to be displayed
 const dict = {
     title: {
-        en: `RLI's Celebrities`,
-        ga: `Daoine Cáiliúil as RLI`
+        en: `Great Quotes of RL Ireland`,
+        ga: `Frásaí Cáiliúl de RL Ireland`
     },
     pageContent: {
         en: ``,
@@ -22,16 +22,16 @@ const dict = {
         ga: `This page is available in <button type="button" onclick="langChange()" class="text-button"><strong>English</strong></button>.`
     },
     headerBanner: {
-        en: `<li><a href="../index.html">Home</a></li>
+        en: `<li><a href="../wiki-index.html">Home</a></li>
         <li><a href="../Timeline/timeline.html">Timeline</a></li>
-        <li><a href="../Quotes/quotes.html">Quotes</a></li>
+        <li><a href="quotes.html" id="current-page">Quotes</a></li>
         <li><a href="../Tournaments/tournaments.html">Tournaments</a></li>
-        <li><a href="personalities.html" id="current-page">Personalities</a></li>`,
-        ga: `<li><a href="../index.html">Baile</a></li>
+        <li><a href="../Personalities/personalities.html">Personalities</a></li>`,
+        ga: `<li><a href="../wiki-index.html">Baile</a></li>
         <li><a href="../Timeline/timeline.html">Amlíne</a></li>
-        <li><a href="../Quotes/quotes.html">Frásaí</a></li>
+        <li><a href="quotes.html" id="current-page">Frásaí</a></li>
         <li><a href="../Tournaments/tournaments.html">Turnaimint</a></li>
-        <li><a href="personalities.html" id="current-page">Pearsantachtaí</a></li>`
+        <li><a href="../Personalities/personalities.html">Pearsantachtaí</a></li>`
     }
 }
 
