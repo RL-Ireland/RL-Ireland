@@ -22,8 +22,8 @@ const dict = {
         ga: `This page is available in <button type="button" onclick="langChange()" class="text-button"><strong>English</strong></button>.`
     },
     headerBanner: {
-        en: ``,
-        ga: ``
+        en: `<a href="wiki/wiki-index.html">Wiki</a>`,
+        ga: `<a href="wiki/wiki-index.html">Wiki</a>`
     }
 }
 
