@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Open-Sans";
-    src: url("wiki-assets/fonts/opensans-regular-webfont.eot") format("eot");
-    src: url("wiki-assets/fonts/opensans-regular-webfont.ttf") format("ttf"), url("wiki-assets/fonts/opensans-regular-webfont.woff") format("woff"), url("wiki-assets/fonts/opensans-regular-webfont.woff2") format("woff2");
+    src: url("../wiki-assets/fonts/opensans-regular-webfont.eot") format("eot");
+    src: url("../wiki-assets/fonts/opensans-regular-webfont.ttf") format("ttf"), url("../wiki-assets/fonts/opensans-regular-webfont.woff") format("woff"), url("../wiki-assets/fonts/opensans-regular-webfont.woff2") format("woff2");
 }
 
 * {
