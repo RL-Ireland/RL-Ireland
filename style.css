@@ -310,6 +310,7 @@ input:checked+.slider:before {
     text-justify: left;
     margin-left: 10%;
     margin-right: 0;
+    margin-bottom: 20px;
 }
 
 .news--article {
