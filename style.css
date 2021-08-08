@@ -1,12 +1,14 @@
 @font-face {
     font-family: "Open-Sans";
-    src: url("wiki-assets/fonts/opensans-regular-webfont.eot") format("eot");
-    src: url("wiki-assets/fonts/opensans-regular-webfont.ttf") format("ttf"), url("wiki-assets/fonts/opensans-regular-webfont.woff") format("woff"), url("wiki-assets/fonts/opensans-regular-webfont.woff2") format("woff2");
+    src: url("assets/fonts/opensans-regular-webfont.eot") format("eot");
+    src: url("assets/fonts/opensans-regular-webfont.ttf") format("ttf"), url("assets/fonts/opensans-regular-webfont.woff") format("woff"), url("assets/fonts/opensans-regular-webfont.woff2") format("woff2");
 }
 
 * {
     font-family: "Open-Sans";
-    text-align: center;
+    text-align: left;
+    align-content: center;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -19,6 +21,18 @@ h1 {
 h2 {
     font-family: "Open-Sans";
     font-size: 2.5em;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    font-family: "Open-Sans";
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: left;
 }
 
 header {
@@ -27,44 +41,35 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: #45B649;
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.news--header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .shortcuts {
     display: flex;
-    background-color: #45B649;
     position: sticky;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    width: 100vw;
-    padding: 0.5%;
 }
 
 .content {
-    margin-top: 70px;
+    margin-top: 20px;
     overflow: auto;
     text-align: justify;
-}
-
-p {
-    font-family: "Open-Sans";
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-.bottom-banner {
-    background-color: #45B649;
-    margin-left: 0;
-    margin-bottom: 0;
-}
-
-.bottom-banner-text {
-    text-align: center;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    font-size: 1.5em;
 }
 
 .text-button {
@@ -117,19 +122,21 @@ img:hover {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+p a {
+    text-decoration: none;
     outline: none;
+    color: green;
     transition: 0.1s;
 }
 
-a:link {
-    color: green;
-}
-
-a:hover {
+p a:hover {
     background-color: grey;
 }
 
-a:visited {
+p a:visited {
     text-decoration: none;
     color: yellowgreen;
 }
@@ -170,20 +177,188 @@ ul li a:visited:hover {
     background-color: #EF6423;
 }
 
-#login {
-    color: white;
+.btn-primary {
+    color: black;
     background-color: green;
     border-color: green;
-    text-align: center;
+}
+
+.btn {
     position: fixed;
     top: 10px;
     right: 10px;
-    padding: 5px;
-    transition: 0.2s;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    background-color: green;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-#login:hover {
+.btn:link {
     color: black;
-    background-color: orange;
-    border-color: orange;
+}
+
+.btn:visited {
+    color: black;
+}
+
+.btn:hover {
+    background-color: #EF6423;
+    border-color: #EF6423;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.switch {
+    position: fixed;
+    top: 20px;
+    right: 250px;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #EF6423;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.news--recent {
+    float: left;
+    margin-left: 13%;
+}
+
+.news--wrapper {
+    clear: left;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    float: left;
+    text-align: left;
+    text-justify: left;
+    margin-left: 10%;
+    margin-right: 0;
+}
+
+.news--article {
+    width: 100%;
+}
+
+.news--explainer {
+    text-align: center;
+}
+
+.news--titlelink {
+    margin-left: 10%;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.news--excerpt {
+    text-align: left;
+    max-width: 70%;
+}
+
+.news--excerpt a {
+    text-decoration: none;
+    color: black;
+}
+
+.news--excerpt a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.news--excerpt a:hover {
+    background: none;
+    color: black;
+}
+
+.news--title {
+    margin-bottom: 20px;
+}
+
+.news--subtitle {
+    margin: 0 auto;
+}
+
+.news--text {
+    display: flex;
+    float: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
 }
