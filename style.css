@@ -55,6 +55,7 @@ header {
     align-items: center;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .shortcuts {
@@ -295,8 +296,7 @@ input:checked+.slider:before {
 }
 
 .news--recent {
-    float: left;
-    margin-left: 13%;
+    float: center;
 }
 
 .news--wrapper {
@@ -326,6 +326,11 @@ input:checked+.slider:before {
     text-align: left;
     margin-bottom: 0;
     margin-top: 0;
+    text-decoration: underline;
+}
+
+.news--titlelink a:hover {
+    background: lightgrey;
 }
 
 .news--excerpt {
