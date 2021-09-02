@@ -89,11 +89,9 @@ header {
 img {
     max-width: 50%;
     max-height: 50%;
-    background-color: none;
-}
-
-img:hover {
-    background-color: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #current-page {
@@ -121,6 +119,15 @@ img:hover {
     width: 80vw;
 }
 
+header #headerBanner {
+    height: 50px
+}
+
+.innerPageContent p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -134,7 +141,7 @@ p a {
 }
 
 p a:hover {
-    background-color: grey;
+    background-color: lightgrey;
 }
 
 p a:visited {
@@ -260,7 +267,7 @@ ul li a:visited:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: green;
+    background-color: #EF6423;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -278,7 +285,7 @@ ul li a:visited:hover {
 }
 
 input:checked+.slider {
-    background-color: #EF6423;
+    background-color: green;
 }
 
 input:checked+.slider:before {
@@ -293,6 +300,17 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.langChange {
+    position: relative;
+}
+
+.en {
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    display: inline-block;
 }
 
 .news--recent {

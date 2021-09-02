@@ -44,24 +44,15 @@ let currentPage = url.substring(url.lastIndexOf("/") + 1);
 currentPage = currentPage.split(".", 1);
 currentPage = currentPage[0];
 
-// -------------------------------- RLI TIMES JS ------------------------------
-
-// -------------------------------- END RLI TIMES JS ------------------------------
-
 // Gets all elements in DOM that are translatable
 var elements = document.querySelectorAll("[text]");
 var headerElements = document.querySelectorAll("[header]");
 
 // testing
-// TODO console.log(elements);
-
-// Creates a request for the JSON
-/* TODO const jsonRequest = new Request(`/${localStorage.getItem("lang")}-text.json`);
-
-console.log(jsonRequest);
+console.log(elements);
 
 const getJSON = function() {
-    fetch(jsonRequest)
+    fetch(`/${localStorage.getItem("lang")}-text.json`)
         .then((response) => response.json())
         .then((data) => {
             inject(data)
@@ -95,8 +86,8 @@ const inject = (res) => {
     const replaceText = (el) => {
         const key = el.innerText;
         el.innerText = res[key] || key;
-        // TODO console.log("success!\n", el);
+        console.log("success!\n", el);
     }
     elements.forEach(el => replaceText(el));
 
-};*/
+};
