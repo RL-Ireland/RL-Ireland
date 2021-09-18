@@ -9,33 +9,49 @@ if (!firstTime) {
 }
 
 // Sets the language
-let currentLang = (language) => {
+let currentLang = () => {
     return localStorage.getItem("lang");
 }
 
-// Changes language and stores cookie once changed
-function langChange() {
-
-    if (localStorage.getItem("lang") == "en") {
-
+document.addEventListener("DOMContentLoaded", (event) => {
+    if (localStorage.getItem("lang") == "ga") {
         // change language
         currentLang = "ga";
         localStorage.setItem("lang", "ga");
         console.log("changing language...");
         getJSON();
+    }
+})
 
+function langChangeEN() {
 
-    } else if (localStorage.getItem("lang") == "ga") {
+    console.log(currentLang);
+    if (localStorage.getItem("lang") == "ga") {
 
         // change language
         currentLang = "en";
         localStorage.setItem("lang", "en");
         console.log("changing language...");
         getJSON();
-
     } else {
-        console.log("Error: language isn't set");
+        return console.log("ERROR: tried to change to current language selection (EN).")
     }
+
+}
+
+function langChangeGA() {
+
+    console.log(currentLang);
+    if (localStorage.getItem("lang") == "en") {
+        // change language
+        currentLang = "ga";
+        localStorage.setItem("lang", "ga");
+        console.log("changing language...");
+        getJSON();
+    } else {
+        return console.log("ERROR: tried to change to current language selection (GA).")
+    }
+
 }
 
 // Long ass way to get the name of the page but hey it works

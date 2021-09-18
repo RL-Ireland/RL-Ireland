@@ -244,73 +244,24 @@ ul li a:visited:hover {
     display: block;
 }
 
-.switch {
-    position: fixed;
-    top: 20px;
-    right: 250px;
-    display: inline-block;
-    width: 30px;
-    height: 17px;
-    vertical-align: middle;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
+.lang-change-box {
+    white-space: nowrap;
     position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 15px;
+    right: 70px;
+}
+
+.lang-en,
+.lang-ga {
+    background-color: #45B649;
+    border: none;
+    transition: 0.2s;
+}
+
+.lang-en:hover,
+.lang-ga:hover {
     background-color: #EF6423;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: green;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
-}
-
-.slider.round {
-    border-radius: 17px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-.langChange {
-    position: relative;
-}
-
-.en {
-    position: absolute;
-    top: 10px;
-    right: 250px;
-    display: inline-block;
+    border: #E19226;
 }
 
 .news--recent {
