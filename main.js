@@ -53,8 +53,6 @@ function langChangeGA() {
 
 }
 
-// TODO: Fix HTML in JSON, or find workaround
-
 // Long ass way to get the name of the page but hey it works
 let url = window.location.pathname;
 let currentPage = url.substring(url.lastIndexOf("/") + 1);
@@ -90,7 +88,7 @@ function injectLanguage(key) {
     // check if you have the element to work on?
     if (el.length > 0) {
         // set the text of the element to be the text found for current key and current lang
-        el[0].innerHTML = dict[key][currentLang];
+        el[0].innerHTML = dict[key][localStorage.getItem("lang")];
         console.log(el[0]);
     }
 }
