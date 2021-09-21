@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>RL Ireland</title>
-    <meta name="description" content="A website for RLI. UNDER CONSTRUCTION">
+    <title>RLI Wiki</title>
+    <meta name="description" content="A wiki for all things RLI.">
     <meta charset="utf-8" />
     <link href="/style.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -17,11 +17,46 @@
 
 <body>
 
-    <h1>THIS SITE IS UNDER CONSTRUCTION</h1>
+    <header>
 
-    <h3>if you see this, say "@YummyUranium :eyes:" in #general to join the secret club</h3>
+        <ul class="shortcuts">
 
-    <p>yummy is the best</p>
+            <nav id="headerBanner">
+                <li>
+                    <a data-header-home href="/index.html" id="current-page">Home</a>
+                </li>
+                <li>
+                    <a data-header-timeline href="/wiki/Timeline/timeline.html">Timeline</a>
+                </li>
+                <li>
+                    <a data-header-quotes href="/wiki/Quotes/quotes.html">Quotes</a>
+                </li>
+                <li>
+                    <a data-header-tournaments href="/wiki/Tournaments/tournaments.html">Tournaments</a>
+                </li>
+                <li>
+                    <a data-header-personalities href="/wiki/Personalities/personalities.html">Personalities</a>
+                </li>
+            </nav>
+
+        </ul>
+
+        <span class="lang-change-box">
+            <button class="lang-en" onclick="langChangeEN()">EN</button>
+            <button class="lang-ga" onclick="langChangeGA()">GA</button>
+        </span>
+
+    </header>
+
+    <div class="content">
+
+        <h1 data-index-title>title</h1>
+
+        <p data-index-content>content</p>
+
+    </div>
+
+    <script src="main.js"></script>
 
 </body>
 

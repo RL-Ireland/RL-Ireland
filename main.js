@@ -18,21 +18,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // change language
         currentLang = "ga";
         localStorage.setItem("lang", "ga");
-        console.log("changing language...");
         getJSON();
     }
 })
 
 function langChangeEN() {
 
-    console.log(currentLang);
     if (localStorage.getItem("lang") == "ga") {
 
         // change language
         currentLang = "en";
         localStorage.setItem("lang", "en");
-        console.log("changing language...");
         getJSON();
+
     } else {
         return console.log("ERROR: tried to change to current language selection (EN).")
     }
@@ -41,13 +39,14 @@ function langChangeEN() {
 
 function langChangeGA() {
 
-    console.log(currentLang);
     if (localStorage.getItem("lang") == "en") {
+
         // change language
         currentLang = "ga";
         localStorage.setItem("lang", "ga");
-        console.log("changing language...");
+
         getJSON();
+
     } else {
         return console.log("ERROR: tried to change to current language selection (GA).")
     }
@@ -61,49 +60,43 @@ currentPage = currentPage.split(".", 1);
 currentPage = currentPage[0];
 
 // Gets all elements in DOM that are translatable
-var elements = document.querySelectorAll("[text]");
-var headerElements = document.querySelectorAll("[header]");
+var elements = document.querySelectorAll("[data-text]");
+var headerElements = document.querySelectorAll("[data-header]");
 
-// testing
-console.log(elements);
+var dict;
 
-const getJSON = function() {
-    fetch(`/${localStorage.getItem("lang")}-text.json`)
+const getJSON = async function() {
+
+    // gets the file of text based on current language selection
+    return fetch("/text.json")
+        // store text in "data"
         .then((response) => response.json())
         .then((data) => {
-            inject(data)
+            // injects text based on current language selection
+            fireInjection(data);
         });
 }
 
-// Variable for just the page.
-var currentPageText;
+function injectLanguage(key) {
 
-const inject = (res) => {
-    console.log(res.header);
+    // construct the dataAttribute search term ie 'data-title'
+    var dataAttribute = "data-" + key; // data=title
 
+    // find the html element using the dataAttribute key
+    var el = document.querySelectorAll('[' + dataAttribute + ']');
 
-    var i = 0;
-    headerElements.forEach(el => {
-        el.innerText = res.header[i];
-        console.log("changing things");
-        i++;
+    // check if you have the element to work on?
+    if (el.length > 0) {
+        // set the text of the element to be the text found for current key and current lang
+        el[0].innerText = dict[key][currentLang];
+        console.log(el[0]);
+    }
+}
+
+function fireInjection(res) {
+    dict = res;
+    // Iterate through each key in your dictionary
+    Object.keys(dict).forEach(function(key) {
+        injectLanguage(key);
     });
-    i = 0;
-
-    // find the json variable that corresponds to the page
-    for (let [key, value] of Object.entries(res)) {
-
-        if (key === currentPage) {
-            currentPageText = key[value];
-        }
-    }
-
-    //inject json into html
-    const replaceText = (el) => {
-        const key = el.innerText;
-        el.innerText = res[key] || key;
-        console.log("success!\n", el);
-    }
-    elements.forEach(el => replaceText(el));
-
-};
+}
