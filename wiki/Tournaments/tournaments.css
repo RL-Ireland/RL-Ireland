@@ -1,0 +1,148 @@
+.winner {
+    font-weight: bold;
+}
+
+.lost {
+    font-weight: normal;
+}
+
+.brackets {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    padding: 0 15px;
+}
+
+.col:before,
+.col:after {
+    content: "";
+    flex-grow: 0.5;
+}
+
+.match-spacer {
+    flex-grow: 1;
+}
+
+.col:first-child .match-spacer {
+    min-height: 6px;
+}
+
+.col:not(:first-child) .match-spacer {
+    min-height: 24px;
+}
+
+.group-spacer {
+    min-height: 24px;
+    flex-grow: 1;
+}
+
+.match {
+    position: relative;
+    padding: 6px;
+    background-color: #eee;
+}
+
+.col .match:before,
+.col:not(:last-child) .match:after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+.col .match:before {
+    top: 50%;
+    height: 1px;
+    margin-top: -1px;
+}
+
+.col:not(:last-child) .match:after {
+    width: 1px;
+    right: -15px;
+}
+
+.col:not(:last-child) .match:first-child:after,
+.col:not(:last-child) .group-spacer+.match:after {
+    top: 50%;
+    bottom: 0;
+}
+
+.col:not(:last-child) .pipe+.match:after {
+    top: 0;
+    bottom: 50%;
+}
+
+.col:not(:first-child) .match:before {
+    left: -15px;
+}
+
+.col:not(:last-child) .match:before {
+    right: -15px;
+}
+
+.col:first-child .match:before {
+    width: 100%;
+}
+
+.col:last-child .match:before {
+    width: 100%;
+}
+
+.pipe {
+    position: relative;
+}
+
+.pipe:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.player__sets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.player__sets>li {
+    display: inline-block;
+}
+
+.player__sets>li+li {
+    margin-left: 12px;
+}
+
+.player+.player .player__sets>li {
+    position: relative;
+}
+
+.player+.player .player__sets>li:before {
+    display: inline-block;
+    content: ":";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    font-size: 12px;
+    font-weight: normal;
+    transform: translateX(-50%);
+    color: #999;
+}

@@ -89,7 +89,6 @@ function injectLanguage(key) {
     if (el.length > 0) {
         // set the text of the element to be the text found for current key and current lang
         el[0].innerHTML = dict[key][localStorage.getItem("lang")];
-        console.log(el[0]);
     }
 }
 

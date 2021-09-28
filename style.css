@@ -114,6 +114,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     background-color: var(--bg-main);
+    align-items: center;
 }
 
 nav a {
