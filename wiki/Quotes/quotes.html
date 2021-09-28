@@ -17,25 +17,52 @@
 
 <body>
 
-    <header>
+    <nav>
+        <ul>
 
-        <ul class="shortcuts">
-            <nav id="headerBanner">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/wiki/Timeline/timeline.html">Timeline</a></li>
-                <li><a href="quotes.html" id="current-page">Quotes</a></li>
-                <li><a href="/wiki/Tournaments/tournaments.html">Tournaments</a></li>
-                <li><a href="/wiki/Personalities/personalities.html">Personalities</a></li>
-            </nav>
+            <li>
+                <a data-header-home href="/index.html">Home</a>
+            </li>
+            <li>
+                <a data-header-timeline href="/wiki/Timeline/timeline.html">Timeline</a>
+            </li>
+            <li>
+                <a data-header-quotes href="/wiki/Quotes/quotes.html" id="current-page">Quotes</a>
+            </li>
+            <li>
+                <a data-header-tournaments href="/wiki/Tournaments/tournaments.html">Tournaments</a>
+                <ul>
+                    <li><a data-header-tournaments-rlis href="/wiki/Tournaments/RLIS/rlis-index.html">RLIS</a></li>
+                    <li><a data-header-tournaments-lans href="/wiki/Tournaments/LANs/lans-index.html">LANs</a></li>
+                    <li><a data-header-tournaments-wrs href="/wiki/Tournaments/WRS/wrs-index.html">WRS</a>
+                        <ul>
+                            <li>
+                                <a data-header-tournaments-major href="/wiki/Tournaments/WRS/wrs-major.html">WRS Major</a>
+                            </li>
+                            <li>
+                                <a data-header-tournaments-monthly1 href="/wiki/Tournaments/WRS/wrs-monthly-1.html">WRS Monthly #1</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a data-header-personalities href="/wiki/Personalities/personalities.html">Personalities</a>
+            </li>
         </ul>
 
-    </header>
+    </nav>
+
+    <span class="lang-change-box">
+        <button class="lang-en" onclick="langChangeEN()">EN</button>
+        <button class="lang-ga" onclick="langChangeGA()">GA</button>
+</span>
 
     <div class="content">
 
-        <h1 id="title">Great Quotes of RL Ireland</h1>
+        <h1 data-quotes-title>Great Quotes of RL Ireland</h1>
 
-        <p id="innerPageContent">there aren't any quotes yet :(</p>
+        <p data-quotes-content>there aren't any quotes yet :(</p>
 
     </div>
 
