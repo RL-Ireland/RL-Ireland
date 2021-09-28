@@ -1,14 +1,23 @@
+:root {
+    --bg-main: #45B649;
+    --bg-text: #E19226;
+    --bg-text-emph: #EF6423;
+}
+
 @font-face {
     font-family: "Open-Sans";
     src: url("assets/fonts/opensans-regular-webfont.eot") format("eot");
     src: url("assets/fonts/opensans-regular-webfont.ttf") format("ttf"), url("assets/fonts/opensans-regular-webfont.woff") format("woff"), url("assets/fonts/opensans-regular-webfont.woff2") format("woff2");
 }
 
+body {
+    margin: 0 auto;
+}
+
 * {
     font-family: "Open-Sans";
     text-align: left;
     align-content: center;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -35,19 +44,6 @@ p {
     text-align: left;
 }
 
-header {
-    font-size: 14px;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #45B649;
-    width: 100vw;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-}
-
 .news--header {
     display: flex;
     flex-direction: row;
@@ -58,15 +54,6 @@ header {
     overflow: hidden;
 }
 
-.shortcuts {
-    display: flex;
-    position: sticky;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
 .content {
     margin-top: 20px;
     overflow: auto;
@@ -74,7 +61,7 @@ header {
 }
 
 .text-button {
-    color: #EF6423;
+    color: var(--bg-text-emph);
     border: none;
     background: none;
     padding: none;
@@ -83,7 +70,7 @@ header {
 }
 
 .text-button:hover {
-    color: #E19226;
+    color: var(--bg-text);
 }
 
 img {
@@ -94,12 +81,13 @@ img {
     margin-right: auto;
 }
 
+
+/* NAV STYLING */
+
 #current-page {
-    background-color: #E19226;
+    background-color: var(--bg-text);
     text-shadow: grey;
     color: black;
-    padding-top: none;
-    padding-bottom: none;
     transition: 0.1s;
 }
 
@@ -109,19 +97,106 @@ img {
     color: black;
 }
 
-#headerBanner {
-    display: flex;
-    position: sticky;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
+nav {
+    margin: 0px 0;
+    background-color: var(--bg-main);
+    overflow: visible;
 }
 
-header #headerBanner {
-    height: 50px
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    overflow: visible;
 }
+
+nav ul li {
+    display: inline-block;
+    background-color: var(--bg-main);
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: black;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--bg-text);
+}
+
+
+/* Hide Dropdowns by Default */
+
+nav ul ul {
+    overflow: visible;
+    display: none;
+    position: absolute;
+    top: 60px;
+    /* the height of the main nav */
+}
+
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+
+/* First Tier Dropdown */
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+    overflow: visible;
+}
+
+
+/* Second, Third and more Tiers	*/
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+.lang-change-box {
+    white-space: nowrap;
+    position: absolute;
+    top: 15px;
+    right: 70px;
+}
+
+.lang-en,
+.lang-ga {
+    background-color: #45B649;
+    border: none;
+    transition: 0.2s;
+}
+
+.lang-en:hover,
+.lang-ga:hover {
+    background-color: #EF6423;
+    border: #E19226;
+}
+
+li>a:after {
+    content: ' ▼';
+}
+
+li>a:only-child:after {
+    content: '';
+}
+
+
+/* END NAV STYLING */
 
 .innerPageContent p {
     margin-left: 20%;
@@ -149,120 +224,8 @@ p a:visited {
     color: yellowgreen;
 }
 
-ul {
-    font-family: "Open-Sans";
-    margin: 0;
-}
 
-ul li {
-    list-style: none;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-ul li a {
-    text-decoration: none;
-    color: black;
-    background-color: none;
-    font-size: 2em;
-    transition: 0.2s;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 0.2rem;
-}
-
-ul li a:hover {
-    background-color: #EF6423;
-    color: black;
-}
-
-ul li a:visited {
-    color: black;
-    background-color: none;
-}
-
-ul li a:visited:hover {
-    background-color: #EF6423;
-}
-
-.btn-primary {
-    color: black;
-    background-color: green;
-    border-color: green;
-}
-
-.btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    color: black;
-    background-color: green;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.btn:link {
-    color: black;
-}
-
-.btn:visited {
-    color: black;
-}
-
-.btn:hover {
-    background-color: #EF6423;
-    border-color: #EF6423;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.lang-change-box {
-    white-space: nowrap;
-    position: absolute;
-    top: 15px;
-    right: 70px;
-}
-
-.lang-en,
-.lang-ga {
-    background-color: #45B649;
-    border: none;
-    transition: 0.2s;
-}
-
-.lang-en:hover,
-.lang-ga:hover {
-    background-color: #EF6423;
-    border: #E19226;
-}
+/* NEWS STYLING */
 
 .news--recent {
     float: center;
@@ -337,3 +300,6 @@ ul li a:visited:hover {
     margin-right: 20%;
     justify-content: center;
 }
+
+
+/* END NEWS STYLING */
