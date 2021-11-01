@@ -39,8 +39,8 @@ h3 {
 
 p {
     font-family: "Open-Sans";
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
     text-align: left;
 }
 
@@ -198,6 +198,66 @@ li>a:only-child:after {
 
 
 /* END NAV STYLING */
+
+
+/* SEARCHBAR STYLING */
+
+.searchwrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    width: 30%;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid var(--bg-main);
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: var(--bg-main);
+}
+
+
+/* END SEARCHBAR STYLING */
+
+
+/* QUOTES STYLING */
+
+.quote-author,
+.copypasta-author {
+    color: grey;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.quote-text,
+.copypasta-text {
+    margin-bottom: 5px;
+}
+
+.quote-date,
+.copypasta-date {
+    color: grey;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+
+/* END QUOTES STYLING */
 
 .innerPageContent p {
     margin-left: 20%;

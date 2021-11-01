@@ -99,3 +99,19 @@ function fireInjection(res) {
         injectLanguage(key);
     });
 }
+// SEARCHBAR JS
+
+const searchbar = document.getElementById("searchbar");
+
+let persons = getJSON("persons");
+
+if (searchbar) {
+    searchbar.addEventListener("keyup", function(e) {
+        const searchString = e.target.value;
+
+    })
+}
+
+
+
+// END SEARCHBAR JS

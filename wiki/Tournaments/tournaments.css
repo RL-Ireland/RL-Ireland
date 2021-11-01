@@ -1,3 +1,8 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 .winner {
     font-weight: bold;
 }
@@ -8,6 +13,7 @@
 
 .brackets {
     display: flex;
+    padding: 6%;
 }
 
 .col {
