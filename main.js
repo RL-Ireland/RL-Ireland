@@ -99,19 +99,52 @@ function fireInjection(res) {
         injectLanguage(key);
     });
 }
+
+
 // SEARCHBAR JS
 
-const searchbar = document.getElementById("searchbar");
+const quotesList = document.getElementById('quotesList');
+const searchBar = document.getElementById('searchBar');
+let quotes = [];
 
-let persons = getJSON("persons");
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
 
-if (searchbar) {
-    searchbar.addEventListener("keyup", function(e) {
-        const searchString = e.target.value;
+    const filteredQuotes = quotes.filter((quote) => {
+        return (
+            quote.text.toLowerCase().includes(searchString) ||
+            quote.author.toLowerCase().includes(searchString)
+        );
+    });
+    displayQuotes(filteredQuotes);
+});
 
-    })
-}
+const loadQuotes = async() => {
+    try {
+        const res = await fetch('/quotes.json');
+        quotes = await res.json();
+        displayQuotes(quotes);
+    } catch (err) {
+        console.error(err);
+    }
+};
 
+const displayQuotes = (quotes) => {
+    const htmlString = quotes
+        .map((quote) => {
+            return `
+            <li class="quote">
+                <p class="quote-text">${quote.text}</h2>
+                <p class="quote-author"> - ${quote.author}</p>
+                <p class="quote-date">${quote.date}</p>
+            </li>
+        `;
+        })
+        .join('');
+    quotesList.innerHTML = htmlString;
+};
+
+loadQuotes();
 
 
 // END SEARCHBAR JS

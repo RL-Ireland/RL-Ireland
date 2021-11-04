@@ -256,6 +256,10 @@ li>a:only-child:after {
     font-style: italic;
 }
 
+#quotesList {
+    list-style: none;
+}
+
 
 /* END QUOTES STYLING */
 
