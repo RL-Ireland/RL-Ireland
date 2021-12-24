@@ -138,6 +138,7 @@ nav ul ul {
     display: none;
     position: absolute;
     top: 60px;
+    z-index: 10;
     /* the height of the main nav */
 }
 
@@ -258,6 +259,29 @@ li>a:only-child:after {
 
 #quotesList {
     list-style: none;
+}
+
+#personalitiesList {
+    list-style: none;
+}
+
+.personality-name {
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.personality-reason {
+    color: grey;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.personality-bio {
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 

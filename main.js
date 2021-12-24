@@ -1,3 +1,7 @@
+// defines lang buttons
+const langENButton = document.getElementsByClassName('lang-en');
+const langGAButton = document.getElementsByClassName('lang-ga');
+
 // Checks if its the first time loading the site
 var firstTime = localStorage.getItem("loadedBefore");
 
@@ -19,6 +23,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         currentLang = "ga";
         localStorage.setItem("lang", "ga");
         getJSON();
+
+        // sets lang button styles
+        langGAButton.style.backgroundColor = "#E19226";
     }
 })
 
@@ -30,6 +37,9 @@ function langChangeEN() {
         currentLang = "en";
         localStorage.setItem("lang", "en");
         getJSON();
+
+        // changes style of buttons
+        langENButton.style.backgroundColor = "#E19226";
 
     } else {
         return console.log("ERROR: tried to change to current language selection (EN).")
@@ -46,6 +56,9 @@ function langChangeGA() {
         localStorage.setItem("lang", "ga");
 
         getJSON();
+
+        // changes style of buttons
+        langGAButton.style.backgroundColor = "#E19226";
 
     } else {
         return console.log("ERROR: tried to change to current language selection (GA).")
@@ -80,7 +93,7 @@ const getJSON = async function() {
 function injectLanguage(key) {
 
     // construct the dataAttribute search term ie 'data-title'
-    var dataAttribute = "data-" + key; // data=title
+    var dataAttribute = "data-" + key; // data = title
 
     // find the html element using the dataAttribute key
     var el = document.querySelectorAll('[' + dataAttribute + ']');
@@ -101,57 +114,112 @@ function fireInjection(res) {
 }
 
 
-// SEARCHBAR JS
+// QUOTES JS
 
-const quotesList = document.getElementById('quotesList');
-const searchBar = document.getElementById('searchBar');
+// ! Checks if the page is called "quotes". Could stop working if page is renamed
+if (currentPage == "quotes") {
+    const quotesList = document.getElementById('quotesList');
+    const searchBar = document.getElementById('searchBar');
 
-if (searchBar) {
-    let quotes = [];
+    // Checks if there is a searchbar in the page
+    if (searchBar) {
+        let quotes = [];
 
-    searchBar.addEventListener('keyup', (e) => {
-        const searchString = e.target.value.toLowerCase();
+        // Searchbar JS (taken from yt tutorial)
+        searchBar.addEventListener('keyup', (e) => {
+            const searchString = e.target.value.toLowerCase();
 
-        const filteredQuotes = quotes.filter((quote) => {
-            return (
-                quote.text.toLowerCase().includes(searchString) ||
-                quote.author.toLowerCase().includes(searchString) ||
-                quote.date.toLowerCase().includes(searchString)
-            );
+            const filteredQuotes = quotes.filter((quote) => {
+                return (
+                    quote.text.toLowerCase().includes(searchString) ||
+                    quote.author.toLowerCase().includes(searchString) ||
+                    quote.date.toLowerCase().includes(searchString)
+                );
+            });
+            displayQuotes(filteredQuotes);
         });
-        displayQuotes(filteredQuotes);
-    });
 
-    const loadQuotes = async() => {
-        try {
-            const res = await fetch('/quotes.json');
-            quotes = await res.json();
-            displayQuotes(quotes);
-        } catch (err) {
-            console.error(err);
-        }
-    };
+        // Fetches quotes and inserts them into DOM
+        const loadQuotes = async() => {
+            try {
+                const res = await fetch('/quotes.json');
+                quotes = await res.json();
+                displayQuotes(quotes);
+            } catch (err) {
+                console.error(err);
+            }
+        };
 
-    const displayQuotes = (quotesToBeDisplayed) => {
-        const htmlString = quotesToBeDisplayed
-            .map((quote) => {
-                return `
+        const displayQuotes = (quotesToBeDisplayed) => {
+            const htmlString = quotesToBeDisplayed
+                .map((quote) => {
+                    return `
             <li class="quote">
-                <p class="quote-text">${quote.text}</h2>
+                <p class="quote-text">${quote.text}</p>
                 <p class="quote-author"> - ${quote.author}</p>
                 <p class="quote-date">${quote.date}</p>
             </li>
         `;
-            })
-            .join('');
-        quotesList.innerHTML = htmlString;
-    };
+                })
+                .join('');
+            quotesList.innerHTML = htmlString;
+        };
 
-    loadQuotes();
+        loadQuotes();
+    }
 }
+// END QUOTES JS
 
 
+// START PERSONALITIES JS
+if (currentPage == "personalities") {
+    const personalitiesList = document.getElementById('personalitiesList');
+    const searchBar = document.getElementById('searchBar');
 
+    // Checks if there is a searchbar in the page
+    if (searchBar) {
+        let personalities = [];
 
+        // Searchbar JS (taken from yt tutorial)
+        searchBar.addEventListener('keyup', (e) => {
+            const searchString = e.target.value.toLowerCase();
 
-// END SEARCHBAR JS
+            const filteredpersonalities = personalities.filter((personality) => {
+                return (
+                    personality.name.toLowerCase().includes(searchString) ||
+                    personality.reason.toLowerCase().includes(searchString) ||
+                    personality.bio.toLowerCase().includes(searchString)
+                );
+            });
+            displaypersonalities(filteredpersonalities);
+        });
+
+        // Fetches personalities and inserts them into DOM
+        const loadPersonalities = async() => {
+            try {
+                const res = await fetch('/persons.json');
+                personalities = await res.json();
+                displaypersonalities(personalities);
+            } catch (err) {
+                console.error(err);
+            }
+        };
+
+        const displaypersonalities = (personalitiesToBeDisplayed) => {
+            const htmlString = personalitiesToBeDisplayed
+                .map((personality) => {
+                    return `
+            <li class="personality">
+                <h3 class="personality-name">${personality.name}</h3>
+                <p class="personality-reason"> Biggest Achievement: ${personality.reason}</p>
+                <p class="personality-bio">${personality.bio}</p>
+            </li>
+        `;
+                })
+                .join('');
+            personalitiesList.innerHTML = htmlString;
+        };
+
+        loadPersonalities();
+    }
+}
