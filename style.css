@@ -220,7 +220,7 @@ li>a:only-child:after {
     width: 100%;
     border: 3px solid var(--bg-main);
     padding: 5px;
-    height: 20px;
+    height: 30px;
     border-radius: 5px;
     outline: none;
     color: #9DBFAF;
