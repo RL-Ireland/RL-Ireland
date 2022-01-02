@@ -3,7 +3,7 @@
 
 <head>
     <title>RLI Wiki Tournaments</title>
-    <meta name="description" content="A collection of all the tournaments RLI has hosted.">
+    <meta name="description" content="RLI's tournaments.">
     <meta charset="utf-8" />
     <link href="/style.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -31,20 +31,6 @@
             </li>
             <li>
                 <a data-header-tournaments href="/wiki/Tournaments/tournaments.html" id="current-page">Tournaments</a>
-                <ul>
-                    <li><a data-header-tournaments-rlis href="/wiki/Tournaments/RLIS/rlis-index.html">RLIS</a></li>
-                    <li><a data-header-tournaments-lans href="/wiki/Tournaments/LANs/lans-index.html">LANs</a></li>
-                    <li><a data-header-tournaments-wrs href="/wiki/Tournaments/WRS/wrs-index.html">WRS</a>
-                        <ul>
-                            <li>
-                                <a data-header-tournaments-major href="/wiki/Tournaments/WRS/wrs-major.html">WRS Major</a>
-                            </li>
-                            <li>
-                                <a data-header-tournaments-monthly1 href="/wiki/Tournaments/WRS/wrs-monthly-1.html">WRS Monthly #1</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
             </li>
             <li>
                 <a data-header-personalities href="/wiki/Personalities/personalities.html">Personalities</a>
@@ -60,13 +46,19 @@
 
     <div class="content">
 
-        <h1 id="title">RLI Tournaments</h1>
+        <h1 data-quotes-title>RLI Tournaments</h1>
 
-        <p id="innerPageContent">the only pages made so far is the <a href="WRS/wrs-index.html">WRS</a> page and the <a href="RLIS/rlis-index.html">RLIS</a> page, for testing purposes. visit if you want.</p>
+        <div class="searchwrapper">
+            <div class="search">
+                <input type="search" name="searchBar" id="searchBar" class="searchTerm" placeholder="Search">
+            </div>
+        </div>
 
-    </div>
 
-    <script src="/main.js"></script>
+        <ul class="searchList" id="tournamentsList"></ul>
+
+
+        <script src="/main.js"></script>
 
 </body>
 

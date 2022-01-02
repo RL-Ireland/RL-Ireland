@@ -130,45 +130,6 @@ nav a:hover {
     background-color: var(--bg-text);
 }
 
-
-/* Hide Dropdowns by Default */
-
-nav ul ul {
-    overflow: visible;
-    display: none;
-    position: absolute;
-    top: 60px;
-    z-index: 10;
-    /* the height of the main nav */
-}
-
-
-/* Display Dropdowns on Hover */
-
-nav ul li:hover>ul {
-    display: inherit;
-}
-
-
-/* First Tier Dropdown */
-
-nav ul ul li {
-    width: 200px;
-    float: none;
-    display: list-item;
-    position: relative;
-    overflow: visible;
-}
-
-
-/* Second, Third and more Tiers	*/
-
-nav ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 170px;
-}
-
 .lang-change-box {
     white-space: nowrap;
     position: absolute;
@@ -187,14 +148,6 @@ nav ul ul ul li {
 .lang-ga:hover {
     background-color: #EF6423;
     border: #E19226;
-}
-
-li>a:after {
-    content: ' ▼';
-}
-
-li>a:only-child:after {
-    content: '';
 }
 
 
@@ -230,40 +183,39 @@ li>a:only-child:after {
     color: var(--bg-main);
 }
 
+.searchList {
+    list-style: none;
+}
+
 
 /* END SEARCHBAR STYLING */
 
 
 /* QUOTES STYLING */
 
-.quote-author,
-.copypasta-author {
+.quote-author {
     color: grey;
     font-style: italic;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 
-.quote-text,
-.copypasta-text {
+.quote-text {
     margin-bottom: 5px;
 }
 
-.quote-date,
-.copypasta-date {
+.quote-date {
     color: grey;
     margin-top: 0px;
     margin-bottom: 30px;
     font-style: italic;
 }
 
-#quotesList {
-    list-style: none;
-}
 
-#personalitiesList {
-    list-style: none;
-}
+/* END QUOTES STYLING */
+
+
+/* PERSONALITIES STYLING */
 
 .personality-name {
     margin-right: 20%;
@@ -285,7 +237,29 @@ li>a:only-child:after {
 }
 
 
-/* END QUOTES STYLING */
+/* START TOURNAMENTS STYLING */
+
+.tournament-name {
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.tournament-date {
+    color: grey;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.tournament-description {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+/* END TOURNAMENTS STYLING */
 
 .innerPageContent p {
     margin-left: 20%;
@@ -315,6 +289,11 @@ p a:visited {
 
 
 /* NEWS STYLING */
+
+.news--header {
+    background-color: var(--bg-main);
+    height: 75px;
+}
 
 .news--recent {
     float: center;

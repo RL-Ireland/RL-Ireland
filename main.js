@@ -171,7 +171,7 @@ if (currentPage == "quotes") {
 // END QUOTES JS
 
 
-// START PERSONALITIES JS
+// START PERSONALITES JS
 if (currentPage == "personalities") {
     const personalitiesList = document.getElementById('personalitiesList');
     const searchBar = document.getElementById('searchBar');
@@ -184,14 +184,14 @@ if (currentPage == "personalities") {
         searchBar.addEventListener('keyup', (e) => {
             const searchString = e.target.value.toLowerCase();
 
-            const filteredpersonalities = personalities.filter((personality) => {
+            const filteredPersonalities = personalities.filter((personality) => {
                 return (
                     personality.name.toLowerCase().includes(searchString) ||
                     personality.reason.toLowerCase().includes(searchString) ||
                     personality.bio.toLowerCase().includes(searchString)
                 );
             });
-            displaypersonalities(filteredpersonalities);
+            displayPersonalities(filteredPersonalities);
         });
 
         // Fetches personalities and inserts them into DOM
@@ -199,13 +199,13 @@ if (currentPage == "personalities") {
             try {
                 const res = await fetch('/persons.json');
                 personalities = await res.json();
-                displaypersonalities(personalities);
+                displayPersonalities(personalities);
             } catch (err) {
                 console.error(err);
             }
         };
 
-        const displaypersonalities = (personalitiesToBeDisplayed) => {
+        const displayPersonalities = (personalitiesToBeDisplayed) => {
             const htmlString = personalitiesToBeDisplayed
                 .map((personality) => {
                     return `
@@ -221,5 +221,58 @@ if (currentPage == "personalities") {
         };
 
         loadPersonalities();
+    }
+}
+
+// START TOURNAMENTS JS
+if (currentPage == "tournaments") {
+    const tournamentsList = document.getElementById('tournamentsList');
+    const searchBar = document.getElementById('searchBar');
+
+    // Checks if there is a searchbar in the page
+    if (searchBar) {
+        let tournaments = [];
+
+        // Searchbar JS (taken from yt tutorial)
+        searchBar.addEventListener('keyup', (e) => {
+            const searchString = e.target.value.toLowerCase();
+
+            const filteredtournaments = tournaments.filter((tournament) => {
+                return (
+                    tournament.name.toLowerCase().includes(searchString) ||
+                    tournament.description.toLowerCase().includes(searchString) ||
+                    tournament.date.toLowerCase().includes(searchString)
+                );
+            });
+            displayTournaments(filteredtournaments);
+        });
+
+        // Fetches tournaments and inserts them into DOM
+        const loadTournaments = async() => {
+            try {
+                const res = await fetch('/tournaments.json');
+                tournaments = await res.json();
+                displayTournaments(tournaments);
+            } catch (err) {
+                console.error(err);
+            }
+        };
+
+        const displayTournaments = (tournamentsToBeDisplayed) => {
+            const htmlString = tournamentsToBeDisplayed
+                .map((tournament) => {
+                    return `
+            <li class="tournament">
+                <h3 class="tournament-name"><a href="${tournament.link}">${tournament.name}</a></h3>
+                <p class="tournament-date">${tournament.date}</p>
+                <p class="tournament-description">${tournament.description}</p>
+            </li>
+        `;
+                })
+                .join('');
+            tournamentsList.innerHTML = htmlString;
+        };
+
+        loadTournaments();
     }
 }
