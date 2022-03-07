@@ -19,21 +19,16 @@ let currentLang = () => {
 
 document.addEventListener("DOMContentLoaded", (event) => {
     if (localStorage.getItem("lang") == "ga") {
+
         // change language
         currentLang = "ga";
-        localStorage.setItem("lang", "ga");
         getJSON();
 
-        // sets lang button styles
-        langGAButton.style.backgroundColor = "#E19226";
     } else if (localStorage.getItem("lang") == "en") {
         // change language
         currentLang = "ga";
-        localStorage.setItem("lang", "ga");
         getJSON();
-            
-        // sets lang button styles
-        langGAButton.style.backgroundColor = "#E19226";
+
     } else{
         return console.log("ERROR: tried to change to current language selection (EN).")
     }
@@ -48,8 +43,6 @@ function langChangeEN() {
         localStorage.setItem("lang", "en");
         getJSON();
 
-        // changes style of buttons
-        langENButton.style.backgroundColor = "#E19226";
 
     } else {
         return console.log("ERROR: tried to change to current language selection (EN).")
@@ -66,9 +59,6 @@ function langChangeGA() {
         localStorage.setItem("lang", "ga");
 
         getJSON();
-
-        // changes style of buttons
-        langGAButton.style.backgroundColor = "#E19226";
 
     } else {
         return console.log("ERROR: tried to change to current language selection (GA).")
