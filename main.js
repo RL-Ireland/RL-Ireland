@@ -210,7 +210,7 @@ if (currentPage == "personalities") {
                 .map((personality) => {
                     return `
             <li class="personality">
-                <h3 class="personality-name">${personality.name}</h3>
+                <h3 class="personality-name" id="${personality.name}">${personality.name}</h3>
                 <p class="personality-reason"> Biggest Achievement: ${personality.reason}</p>
                 <p class="personality-bio">${personality.bio}</p>
             </li>
