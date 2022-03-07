@@ -1,6 +1,6 @@
 // defines lang buttons
-const langENButton = document.getElementsByClassName('lang-en');
-const langGAButton = document.getElementsByClassName('lang-ga');
+const langENButton = document.getElementById('lang-en');
+const langGAButton = document.getElementById('lang-ga');
 
 // Checks if its the first time loading the site
 var firstTime = localStorage.getItem("loadedBefore");
@@ -24,10 +24,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
         currentLang = "ga";
         getJSON();
 
+        // changes colour to match current language
+        langGAButton.style.backgroundColor = "#E19226";
+        langENButton.style.backgroundColor = "";
+
     } else if (localStorage.getItem("lang") == "en") {
         // change language
-        currentLang = "ga";
+        currentLang = "en";
         getJSON();
+
+        // changes colour to match current language
+        langENButton.style.backgroundColor = "#E19226";
+        langGAButton.style.backgroundColor = "";
 
     } else{
         return console.log("ERROR: tried to change to current language selection (EN).")
@@ -43,6 +51,10 @@ function langChangeEN() {
         localStorage.setItem("lang", "en");
         getJSON();
 
+        // changes colour to match current language
+        langENButton.style.backgroundColor = "#E19226";
+        langGAButton.style.backgroundColor = "";
+
 
     } else {
         return console.log("ERROR: tried to change to current language selection (EN).")
@@ -57,6 +69,10 @@ function langChangeGA() {
         // change language
         currentLang = "ga";
         localStorage.setItem("lang", "ga");
+
+        // changes colour to match current language
+        langGAButton.style.backgroundColor = "#E19226";
+        langENButton.style.backgroundColor = "";
 
         getJSON();
 
