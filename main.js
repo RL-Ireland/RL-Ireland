@@ -26,6 +26,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         // sets lang button styles
         langGAButton.style.backgroundColor = "#E19226";
+    } else if (localStorage.getItem("lang") == "en") {
+        // change language
+        currentLang = "ga";
+        localStorage.setItem("lang", "ga");
+        getJSON();
+            
+        // sets lang button styles
+        langGAButton.style.backgroundColor = "#E19226";
+    } else{
+        return console.log("ERROR: tried to change to current language selection (EN).")
     }
 })
 
