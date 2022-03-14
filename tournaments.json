@@ -44,7 +44,7 @@
         "name": "LAN #10",
         "link": "https://liquipedia.net/rocketleague/RL_Ireland/LAN_10",
         "date": "2021-10-30",
-        "description": "LAN #10 was an offline tournament held at the 365 IT Hub Gaming Lounge in Cork City, Ireland. The competition featured a €600 prize pool. This was the 10th LAN that had been run by RLI, and the first of 2021."
+        "description": "LAN #10 was an offline tournament held at the 365 IT Hub Gaming Lounge in Cork. The competition featured a €600 prize pool. This was the 10th LAN that had been run by RLI, and the first of 2021."
     },
     {
         "name": "Winter 2021 3v3",
@@ -57,5 +57,11 @@
         "link": "https://liquipedia.net/rocketleague/RL_Ireland/Spiral_Series/1",
         "date": "2021-12-10",
         "description": "Spiral Series is a 3v3 tournament with a few unique twists."
+    },
+    {
+        "name": "NewryLAN",
+        "link": "https://liquipedia.net/rocketleague/RL_Ireland/NewryLAN",
+        "date": "2022-03-12",
+        "description": "NewryLAN was an offline tournament held at Belong Gaming in Newry. It had a €735 prize pool, was the 11th RLI LAN and was the first LAN of 2022."
     }
 ]
