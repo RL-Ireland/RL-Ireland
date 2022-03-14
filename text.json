@@ -35,6 +35,14 @@
         "en": "This is a wiki for RL Ireland, a community of Irish people who play Rocket League. Below you can check out our socials, and be sure to read 'The Timeline of RL Ireland', along with the best community quotes, personalities and tournaments we've held!",
         "ga": "Seo wiki fa choinne RLI, grúpa Éireannaigh an imríonn Rocket League. Is féidir muid a fheiceáil ar na meáin sóisialta ar na nascanna faoi, agus deán cinnte 'Stair RL Ireland' a léamh, chomh maith le na ráitis is fearr, beathaisnéis pearsantachtaí agus na comórtais a raibh ar siúl againn!"
     },
+    "index-socials": {
+        "en": "Link to Linktree for social media accounts:",
+        "ga": "Nasc Linktree fa choinne cuntais meáin sóisialta:"
+    },
+    "index-linktree": {
+        "en": "Link",
+        "ga": "Nasc"
+    },
     "timeline-title": {
         "en": "The Timeline of RL Ireland",
         "ga": "Amlíne de RL Ireland"
