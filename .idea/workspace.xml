@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94d0da8d-baa7-4034-b0d4-e5fc260e7bf5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/6Mans/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/profiles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Bronze_Medal_PNG_Clip_Art_Image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Gold_Medal_PNG_Clip_Art_Image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/RLI_Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/RLI_logo_Transparent.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Silver_Medal_PNG_Clip_Art_Image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/about-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/contact-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/home-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/irish_scenery.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/post-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/post-sample-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/rli-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/PreviousLeaderboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki/Personalities/personalities.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/Personalities/personalities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki/Quotes/quotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/Quotes/quotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki/Timeline/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/Timeline/timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki/Tournaments/tournaments.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/Tournaments/tournaments.html" afterDir="false" />
+    <list default="true" id="94d0da8d-baa7-4034-b0d4-e5fc260e7bf5" name="Changes" comment="Added boostrap &amp; 6Mans Section">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +65,21 @@
       <option name="presentableId" value="Default" />
       <updated>1660140138827</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added boostrap &amp; 6Mans Section">
+      <created>1660149159718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660149159718</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added boostrap &amp; 6Mans Section">
+      <created>1660149416927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660149416928</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added boostrap &amp; 6Mans Section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added boostrap &amp; 6Mans Section" />
   </component>
 </project>
